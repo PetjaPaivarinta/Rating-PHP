@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     let male = document.getElementById('male');
     let female = document.getElementById('female');
-    let chosenGender = 0;
+    let chosenGender;
 
     function updateGender(value) {
         chosenGender = value;
@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", function() {
         male.style.opacity = '1';
         male.style.color = 'red';
         female.style.opacity = '0.1';
+        male.style.border = '1px solid black';
+        female.style.border = 'none';
         updateGender("Male");
     });
 
@@ -28,6 +30,8 @@ document.addEventListener("DOMContentLoaded", function() {
         female.style.opacity = '1';
         female.style.color = 'red';
         male.style.opacity = '0.1';
+        male.style.border = 'none';
+        female.style.border = '1px solid black';
         updateGender("Female");
     });
 });

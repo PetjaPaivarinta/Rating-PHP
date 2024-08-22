@@ -1,13 +1,3 @@
-<?php
-        session_start();
-
-        if ($_SESSION['userType'] !== 'admin') {
-            header("Location: login.php");
-            exit();
-        } else {
-            
-        }
-?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -32,6 +22,7 @@
         <a href="login.php" class="logout">Logout</a>
 
 
+
         <?php
             $file = fopen("../RatingPHP_/ratings.txt", "r") or die("Unable to open file!");
             $ratings = fread($file, filesize("../RatingPHP_/ratings.txt")); 
@@ -39,8 +30,8 @@
 
             echo "<table>";
             echo "<tr>";
-            echo "<th>GENDER</th>";
-            echo "<th>EMOTION</th>";
+            echo "<th>Gender</th>";
+            echo "<th>Emotion</th>";
             echo "<th>Time of Day</th>";
             echo "</tr>";
             for ($i = 0; $i < count($ratings) -1; $i++) {
@@ -51,9 +42,17 @@
                 echo "<td>" . $rating[2] . "</td>";
                 echo "</tr>";
             }
-            
-            fclose($file);
-        ?>
-        
+            echo "</table>";
+
+            if (isset($_POST['submit'])) {
+                header('Location: pdf.php');
+            }
+
+            echo "<form method='post'>
+            <input id='submit' type='submit' name='submit' value='Download Ratings'>
+            </form>";
+            ?>
+       
         <script src="../RatingPHP_/Assets/JS/checkDark.js"></script>
-    </body>
+        <script src="../RatingPHP_/Assets/JS/checkAdmin.js"></script>
+        </body>

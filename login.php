@@ -1,3 +1,6 @@
+<?php 
+echo "<script>localStorage.setItem('admin', 'null');</script>";  
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,10 +46,10 @@
            session_start();
 
            if (isset($_POST['submit'])) {
-               $userType = $_POST['userType'];
-               $password = $_POST['password'];
-               $hashedPassword = sha1($password);
-
+            $userType = $_POST['userType'];
+            $password = $_POST['password'];
+            $hashedPassword = sha1($password);
+        
             if ($userType == 'user') {
                 echo "Redirecting to user.php";
                 header("Location: user.php");
@@ -56,12 +59,14 @@
                 $result = mysqli_query($conn, $query);
                 if (mysqli_num_rows($result) > 0) {
                     $_SESSION['userType'] = $userType;
-                    header("Location: admin.php"); } 
-                else {
+                    echo "<script>alert('Login successful')</script>";
+                    echo "<script>localStorage.setItem('admin', 'enabled');</script>";
+                    echo "<script>window.location.href = 'admin.php';</script>";
+                } else {
                     echo "<script>alert('Invalid credentials')</script>";
                 }
             }
-           }
+        }
         ?>
 
     <script src="../RatingPHP_/Assets/JS/showLogin.js"></script>

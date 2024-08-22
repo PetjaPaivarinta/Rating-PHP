@@ -366,9 +366,11 @@ table {
     text-align: left;
     padding: 8px;
   }
+
   th {
     background-color: #0a62e6;
     color: white;
+    font-size: 2vh;
   }
   
   tr:nth-child(even) {

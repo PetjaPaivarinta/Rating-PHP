@@ -79,9 +79,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             } else {
                 $chosenGender = "Not set";
             }
-            
+
+            date_default_timezone_set('Europe/Helsinki');
+
             if (isset($_POST['submit'])) {   
             $file = fopen("../RatingPHP_/ratings.txt", "a") or die("Unable to open file!");
+            
             $time = date("Y-m-d H:i:s");
             $txt =  $chosenGender . "," . $chosen . "," . $time . ",\n";
             fwrite($file, $txt);
