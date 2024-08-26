@@ -316,11 +316,11 @@ input[type=submit]:hover {
     color: #9c4848;
 }
 #submit {
-    width: 30%;
+    width: 20%;
     background-color: #4f51d4;
-    margin-left: 34%;
-    margin-top: 5vh;
-    margin-bottom: 6vh;
+    margin-left: 40%;
+    margin-top: 0vh;
+    margin-bottom: 2vh;
     margin-right: auto;
 }
 #submit:hover {
@@ -356,13 +356,10 @@ table {
     width: calc(100% - 10vh);
     margin-left: 5vh;
     margin-right: 5vh;
-    margin-top: 10vh;
-
   }
   
   td, th {
-    border: 1px solid #000000;
-    border-radius: 15%;
+    border: 1px double #000000;
     text-align: left;
     padding: 8px;
   }

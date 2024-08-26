@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Admin Panel</title>
-        <link rel="stylesheet" type="text/css" href="../RatingPHP_/Assets/main.css">
-        <link rel="stylesheet" type="text/css" href="../RatingPHP_/Assets/toggle.css">
+        <link rel="stylesheet" type="text/css" href="../Rating-PHP/Assets/main.css">
+        <link rel="stylesheet" type="text/css" href="../Rating-PHP/Assets/toggle.css">
     </head>
     <body>
        
@@ -21,11 +21,17 @@
 
         <a href="login.php" class="logout">Logout</a>
 
+        <form method='post'>
+            <input id='submit' type='submit' name='submit' value='Export'>
+        </form>
 
+        <form method='post'>
+            <input id='submit' type='submit' name='diagrams' value='View'>
+        </form>
 
         <?php
-            $file = fopen("../RatingPHP_/ratings.txt", "r") or die("Unable to open file!");
-            $ratings = fread($file, filesize("../RatingPHP_/ratings.txt")); 
+            $file = fopen("../Rating-PHP/ratings.txt", "r") or die("Unable to open file!");
+            $ratings = fread($file, filesize("../Rating-PHP/ratings.txt")); 
             $ratings = explode("\n", $ratings);
 
             echo "<table>";
@@ -44,15 +50,15 @@
             }
             echo "</table>";
 
-            if (isset($_POST['submit'])) {
+            if (isset($_POST['submit']) && $_POST['submit'] == 'Export') {
                 header('Location: pdf.php');
             }
 
-            echo "<form method='post'>
-            <input id='submit' type='submit' name='submit' value='Download Ratings'>
-            </form>";
+            if (isset($_POST['diagrams']) && $_POST['diagrams'] == 'View') {
+                echo "<script>window.open('diagrams.php', 'newwindow', 'width=300, height=250');</script>";
+            }
             ?>
        
-        <script src="../RatingPHP_/Assets/JS/checkDark.js"></script>
-        <script src="../RatingPHP_/Assets/JS/checkAdmin.js"></script>
+        <script src="../Rating-PHP/Assets/JS/checkDark.js"></script>
+        <script src="../Rating-PHP/Assets/JS/Admin.js"></script>
         </body>

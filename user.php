@@ -24,8 +24,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PHP Test</title>
-        <link rel="stylesheet" type="text/css" href="../RatingPHP_/Assets/main.css">
-        <link rel="stylesheet" type="text/css" href="../RatingPHP_/Assets/toggle.css">
+        <link rel="stylesheet" type="text/css" href="../Rating-PHP/Assets/main.css">
+        <link rel="stylesheet" type="text/css" href="../Rating-PHP/Assets/toggle.css">
     </head>
     <body>
 
@@ -53,13 +53,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
        
         <div class="emojis">
             <div class="emoji">
-                <img id="sadOut" src="../RatingPHP_/Assets/Images/sadOutline.png" alt="emoji1">
+                <img id="sadOut" src="../Rating-PHP/Assets/Images/sadOutline.png" alt="emoji1">
             </div>
             <div class="emoji">
-            <img  id="angryOut" src="../RatingPHP_/Assets/Images/angryOutline.png" alt="emoji1">
+            <img  id="angryOut" src="../Rating-PHP/Assets/Images/angryOutline.png" alt="emoji1">
             </div>
             <div class="emoji">
-                <img  id="jeffOut" src="../RatingPHP_/Assets/Images/jeffOutline.png" alt="emoji1">
+                <img  id="jeffOut" src="../Rating-PHP/Assets/Images/jeffOutline.png" alt="emoji1">
             </div>
         </div>
 
@@ -83,7 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             date_default_timezone_set('Europe/Helsinki');
 
             if (isset($_POST['submit'])) {   
-            $file = fopen("../RatingPHP_/ratings.txt", "a") or die("Unable to open file!");
+            $file = fopen("../Rating-PHP/ratings.txt", "a") or die("Unable to open file!");
             
             $time = date("Y-m-d H:i:s");
             $txt =  $chosenGender . "," . $chosen . "," . $time . ",\n";
@@ -92,8 +92,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             echo "<h1 id='filedata'>Data written to ratings.txt: " . " successfully!</h1>";
         }
         ?>
-        <script src="../RatingPHP_/Assets/JS/checkDark.js"></script>
-        <script src="../RatingPHP_/Assets/JS/changeSmile.js"></script>
-        <script src="../RatingPHP_/Assets/JS/selectGender.js"></script>
+        <script src="../Rating-PHP/Assets/JS/checkDark.js"></script>
+        <script src="../Rating-PHP/Assets/JS/changeSmile.js"></script>
+        <script src="../Rating-PHP/Assets/JS/selectGender.js"></script>
 
     </body>

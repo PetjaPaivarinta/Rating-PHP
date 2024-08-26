@@ -16,21 +16,21 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function changeSad() {
-        sadOut.src = "../RatingPHP_/Assets/Images/sadFill.png";
-        angryOut.src = "../RatingPHP_/Assets/Images/angryOutline.png";
-        jeffOut.src = "../RatingPHP_/Assets/Images/jeffOutline.png";
+        sadOut.src = "../Rating-PHP/Assets/Images/sadFill.png";
+        angryOut.src = "../Rating-PHP/Assets/Images/angryOutline.png";
+        jeffOut.src = "../Rating-PHP/Assets/Images/jeffOutline.png";
         updateChosen("Sad face");
     }
     function changeAngry() {
-        angryOut.src = "../RatingPHP_/Assets/Images/angryFill.png";
-        sadOut.src = "../RatingPHP_/Assets/Images/sadOutline.png";
-        jeffOut.src = "../RatingPHP_/Assets/Images/jeffOutline.png";
+        angryOut.src = "../Rating-PHP/Assets/Images/angryFill.png";
+        sadOut.src = "../Rating-PHP/Assets/Images/sadOutline.png";
+        jeffOut.src = "../Rating-PHP/Assets/Images/jeffOutline.png";
         updateChosen("Angry face");
     }
     function changeJeff() {
-        jeffOut.src = "../RatingPHP_/Assets/Images/jeffFill.png";
-        angryOut.src = "../RatingPHP_/Assets/Images/angryOutline.png";
-        sadOut.src = "../RatingPHP_/Assets/Images/sadOutline.png";
+        jeffOut.src = "../Rating-PHP/Assets/Images/jeffFill.png";
+        angryOut.src = "../Rating-PHP/Assets/Images/angryOutline.png";
+        sadOut.src = "../Rating-PHP/Assets/Images/sadOutline.png";
         updateChosen("Cool face");
     }
 

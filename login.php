@@ -7,8 +7,8 @@ echo "<script>localStorage.setItem('admin', 'null');</script>";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="../RatingPHP_/Assets/main.css">
-    <link rel="stylesheet" type="text/css" href="../RatingPHP_/Assets/toggle.css">
+    <link rel="stylesheet" type="text/css" href="../Rating-PHP/Assets/main.css">
+    <link rel="stylesheet" type="text/css" href="../Rating-PHP/Assets/toggle.css">
 
 </head>
 <body>
@@ -69,6 +69,6 @@ echo "<script>localStorage.setItem('admin', 'null');</script>";
         }
         ?>
 
-    <script src="../RatingPHP_/Assets/JS/showLogin.js"></script>
-    <script src="../RatingPHP_/Assets/JS/checkDark.js"></script>
+    <script src="../Rating-PHP/Assets/JS/showLogin.js"></script>
+    <script src="../Rating-PHP/Assets/JS/checkDark.js"></script>
 </body>

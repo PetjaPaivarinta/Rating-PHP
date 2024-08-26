@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rating PHP</title>
-        <link rel="stylesheet" type="text/css" href="../RatingPHP_/Assets/main.css">
-        <link rel="stylesheet" type="text/css" href="../RatingPHP_/Assets/toggle.css">
+        <link rel="stylesheet" type="text/css" href="../Rating-PHP/Assets/main.css">
+        <link rel="stylesheet" type="text/css" href="../Rating-PHP/Assets/toggle.css">
     </head>
     <body>
         <!-- toggle switch -->
@@ -17,7 +17,7 @@
 
 
          <div id="frontImg">
-        <img src="../RatingPHP_/Assets/Images/clerk.jpg" alt="the store clerk" id="stockmarketImage">
+        <img src="../Rating-PHP/Assets/Images/clerk.jpg" alt="the store clerk" id="stockmarketImage">
         <p>rate this man</p>
         <div class="countdown">
             <p id="countdown" >You will be automatically redirected in:</p>
@@ -68,7 +68,7 @@
             <p>&copy; 2024 Rate-A-Man</p>
         </footer>
         <script src="" async defer></script>
-        <script src="../RatingPHP_/Assets/JS/main.js"></script>
-        <script src="../RatingPHP_/Assets/JS/checkDark.js"></script>
+        <script src="../Rating-PHP/Assets/JS/main.js"></script>
+        <script src="../Rating-PHP/Assets/JS/checkDark.js"></script>
 
     </body>
