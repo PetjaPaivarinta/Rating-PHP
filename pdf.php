@@ -46,13 +46,13 @@
             }
         }
 
-$pdf = new PDF();
-// Column headings
-$header = array('Gender', 'Emoji', 'Time of Day');
-// Data loading
-$data = $pdf->LoadData('ratings.txt');
-$pdf->SetFont('Arial','',14);
-$pdf->AddPage();
-$pdf->FancyTable($header, $data);
-$pdf->Output();
-    ?>
+        $pdf = new PDF();
+        // Column headings
+        $header = array('Gender', 'Emoji', 'Time of Day');
+        // Data loading
+        $data = $pdf->LoadData('ratings.txt');
+        $pdf->SetFont('Arial','',14);
+        $pdf->AddPage();
+        $pdf->FancyTable($header, $data);
+        $pdf->Output();
+?>

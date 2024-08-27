@@ -80,7 +80,7 @@ echo "<script>localStorage.setItem('admin', 'null');</script>";
                     $_SESSION['counter']--;
                     if ($_SESSION['counter'] <= 0) {
                         $_SESSION['timeout'] = time() + 60; // Set timeout for 60 seconds
-                        echo "<script>alert('Too many failed attempts. Please try again later.')</script>";
+                        echo "<script>alert('Too many failed attempts. Please try again in a minute')</script>";
                     } else {
                         echo "<script>alert('Invalid credentials. You have " . $_SESSION['counter'] . " attempts left.')</script>";
                     }
