@@ -272,6 +272,7 @@ input[type=submit]:hover {
     justify-content: center;
     margin-top: 10vh;
     gap: 50px;
+    margin-bottom: 5vh;
     width: 100%;
 }
 .emoji {
