@@ -22,11 +22,11 @@
                 text-align: center;
             }
         </style>
-        <h1>Male</h1>
+        <h1>Male Diagram</h1>
         <div>
             <canvas id="maleChart"></canvas>
         </div>
-        <h1>Female</h1>
+        <h1>Female Diagram</h1>
         <div>
             <canvas id="femaleChart"></canvas>
         </div>
